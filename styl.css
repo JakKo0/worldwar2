@@ -1,0 +1,280 @@
+
+body {
+    background-color: #111009;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* navigace nahoře */
+nav {
+    background-color: #0c0b06;
+    padding: 15px;
+    border-bottom: 1px solid #5c5135;
+}
+
+nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #c8962a;
+    text-decoration: none;
+    border: 2px solid #4a3c20; padding: 10px; background-color: #1e1a10;
+}
+
+nav a.aktivni {
+    color: #c8962a;
+    font-weight: bold;
+    border: 2px solid #4a3c20; padding: 10px; background-color: #1e1a10;
+}
+
+/* nadpis stránky */
+.hlavicka {
+    background-color: #0c0b06;
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 2px solid #555;
+}
+
+.hlavicka h1 {
+    color: #c8962a;
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.hlavicka p {
+    color: #aaa;
+    font-size: 16px;
+}
+
+/* hlavní obsah */
+.obsah {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* sekce / kartičky */
+.sekce {
+    background-color: #16130c;
+    border: 1px solid #444;
+    border-left: 4px solid #2e2718;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.sekce h2 {
+    color: #c8962a;
+    margin-top: 0;
+    font-size: 22px;
+}
+
+.sekce h3 {
+    color: #ddd;
+    font-size: 18px;
+}
+
+.sekce p {
+    line-height: 1.7;
+    color: #ccc;
+}
+
+/* tabulka faktů */
+.fakta {
+    background-color: #16130c;
+    border: 1px solid #555;
+    padding: 15px 20px;
+    margin: 15px 0;
+}
+
+.fakta table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.fakta td {
+    padding: 6px 10px;
+    border-bottom: 1px solid #444;
+    color: #ccc;
+    font-size: 14px;
+}
+
+.fakta td:first-child {
+    color: #aaa;
+    width: 40%;
+}
+
+/* odkaz na wikipedii */
+.wiki-odkaz {
+    display: inline-block;
+    background-color: rgba(15, 14, 8, 0.98);
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.wiki-odkaz:hover {
+    background-color: rgba(15, 14, 8, 0.98);
+}
+
+/* mřížka pro kartičky osobností / techniky */
+.mrizka {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.karta {
+    background-color: #1a1919;
+    border: 1px solid #444;
+    padding: 20px;
+}
+
+.karta h3 {
+    color: #c8962a;
+    margin-top: 0;
+    font-size: 17px;
+}
+
+.karta p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.karta img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    margin-bottom: 12px;
+    filter: grayscale(50%);
+}
+
+.odkazy a {
+    color: #c8962a;
+    text-decoration: none;
+}
+
+.odkazy a:hover {
+    color: #aaa ;
+}
+/* patička */
+footer {
+    background-color: #0c0b06;
+    border-top: 3px solid #2e2718;
+    padding: 25px 20px;
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #c8962a;
+}
+
+/* index stránka - velké kartičky odkazů */
+.index-karticky {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.index-karta {
+    background-color: #1a1919;
+    border: 1px solid #444;
+    padding: 25px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+
+.index-karta:hover {
+    border-color: #c8962a;
+    background-color: #333;
+}
+
+.index-karta .ikona {
+    font-size: 36px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.index-karta h3 {
+    color: #c8962a;
+    margin: 0 0 8px 0;
+    font-size: 16px;
+}
+
+.index-karta p {
+    color: #aaa;
+    font-size: 13px;
+    margin: 0;
+}
+
+/* timeline na indexu */
+.timeline-polozka {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+.tl-rok {
+    background-color: rgba(20, 18, 11, 0.98);
+    color: white;
+    padding: 5px 12px;
+    font-size: 13px;
+    font-weight: bold;
+    white-space: nowrap;
+    min-width: 100px;
+    text-align: center;
+    margin-top: 2px;
+}
+
+.tl-text h3 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+    color: #ddd;
+}
+
+.tl-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #aaa;
+    line-height: 1.6;
+}
+
+/*responzivita */
+@media (max-width: 700px) {
+    nav a {
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    .mrizka {
+        grid-template-columns: 1fr;
+    }
+
+    .index-karticky {
+        grid-template-columns: 1fr;
+    }
+
+    .hlavicka h1 {
+        font-size: 26px;
+    }
+}
